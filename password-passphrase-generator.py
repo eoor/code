@@ -39,13 +39,13 @@ def passphrase(length = 4):
 def message(num):
     output = [
         'enter command: ',
-        '\u001b[31mcommand error\033[0m',
-        '\u001b[31mparameter error\033[0m',
-        '\u001b[32mexit success\033[0m'
+        'mcommand error',
+        'parameter error',
+        'exit success'
     ]
     return(output[num])
 
-print('\n\033[1mpassword/passphrase generator\033[0m\n')
+print('password/passphrase generator')
 
 helper = [
     ['pw', '16 character password'],
@@ -56,27 +56,27 @@ helper = [
 ]
 
 for row in helper:
-    print('{: <9} {: <50}'.format(* row))
+    print('{: <15} {: <30}'.format(* row))
 
 while True:
-    request = input(f'\n{message(0)}').split()
+    request = input(message(0)).split()
     if request[0] == 'pp':
         if len(request) == 2:
             try:
-                print(f'\u001b[35m\033[1m{passphrase(int(request[1]))}\033[0m')
+                print('passphrase(int(request[1]))')
             except:
                 print(message(2))
         else:
-            print(f'\u001b[35m\033[1m{passphrase()}\033[0m')
+            print('passphrase()')
             continue
     elif request[0] == 'pw':
         if len(request) == 2:
             try:
-                print(f'\u001b[35m\033[1m{password(int(request[1]))}\033[0m')
+                print('password(int(request[1]))')
             except:
                 print(message(2))
         else:
-            print(f'\u001b[35m\033[1m{password()}\033[0m')
+            print('password()')
             continue
     elif request[0] == 'exit':
         print(message(3))
