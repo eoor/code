@@ -39,7 +39,7 @@ def passphrase(length = 4):
 def message(num):
     output = [
         'enter command: ',
-        'mcommand error',
+        'command error',
         'parameter error',
         'exit success'
     ]
