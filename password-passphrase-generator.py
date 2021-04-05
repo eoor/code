@@ -36,17 +36,6 @@ def passphrase(length = 4):
         if word not in output: output.append(word)
     return ' '.join(output)
 
-def message(num):
-    output = [
-        'enter command: ',
-        'command error',
-        'parameter error',
-        'exit success'
-    ]
-    return(output[num])
-
-print('password/passphrase generator')
-
 helper = [
     ['pw', '16 character password'],
     ['pw 4-256', '4-256 character password'],
@@ -55,32 +44,41 @@ helper = [
     ['exit', 'exit']
 ]
 
+message = [
+    'enter command: ',
+    'command error',
+    'parameter error',
+    'exit success'
+]
+
+print('password/passphrase generator')
+
 for row in helper:
     print('{: <15} {: <30}'.format(* row))
 
 while True:
-    request = input(message(0)).split()
-    if request[0] == 'pp':
+    request = input(message[0]).split()
+    if request[0] == helper[2][0]:
         if len(request) == 2:
             try:
-                print('passphrase(int(request[1]))')
+                print(passphrase(int(request[1])))
             except:
-                print(message(2))
+                print(message[2])
         else:
-            print('passphrase()')
+            print(passphrase())
             continue
-    elif request[0] == 'pw':
+    elif request[0] == helper[0][0]:
         if len(request) == 2:
             try:
-                print('password(int(request[1]))')
+                print(password(int(request[1])))
             except:
-                print(message(2))
+                print(message[2])
         else:
-            print('password()')
+            print(password())
             continue
-    elif request[0] == 'exit':
-        print(message(3))
+    elif request[0] == helper[4][0]:
+        print(message[3])
         break
     else:
-        print(message(1))
+        print(message[1])
         continue
