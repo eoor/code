@@ -4,7 +4,7 @@ function RandomInt(min, max) {
 
 function Passphrase(length = 4) {
     var fs = require('fs');
-    var words = fs.readFileSync('dictionary.txt').toString().split('\n');
+    var words = fs.readFileSync(__dirname + '/dictionary.txt', 'utf8').toString().split('\n');
     var output = []
 
     while (output.length < length) {
