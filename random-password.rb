@@ -1,9 +1,7 @@
-def password(length = 8)
+def password(length = 16)
     chars = [
-        "abcdefghijklmnopqrstuvwxyz".split(""),
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
-        "0123456789".split(""),
-        "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~".split("")
+        "abcdefghijklmnopqrstuvwxyz".split(""), "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
+        "0123456789".split(""), "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~".split("")
     ]
     chars_joined = chars.join
     while true
@@ -19,4 +17,8 @@ def password(length = 8)
     end
 end
 
-puts password 16
+if ARGV[0]
+    puts password ARGV[0].to_i
+else
+    puts password
+end
