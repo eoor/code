@@ -1,3 +1,5 @@
+# https://iocane.com.au/talking-passwords-and-entropy/
+
 def entropy(chars_count, length)
     return Math.log(chars_count ** length, 2).round
 end
