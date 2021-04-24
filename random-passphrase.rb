@@ -1,13 +1,13 @@
-def passphrase(length = 4)
-    words = File.read('dictionary.txt').lines.map &:split
-    output = []
-    while output.length < length
-        word = words[rand(words.length)]
-        unless output.include? word
-            output.push(word)
-        end
+def passphrase(length)
+  words = File.read(File.expand_path("./dictionary.txt", __dir__)).lines.map &:split
+  output = []
+  while output.length < length
+    word = words[rand(words.length)]
+    unless output.include? word
+      output.push(word)
     end
-    return output.join(' ')
+  end
+  return output.join(" ")
 end
 
-puts passphrase()
+puts passphrase 3
