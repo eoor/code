@@ -1,4 +1,4 @@
-def password(length)
+def password length
   abc = [
     "abcdefghijklmnopqrstuvwxyz".chars,
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ".chars,
