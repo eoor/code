@@ -2,13 +2,16 @@ def ask q
   print q; gets.chomp
 end
 
-def h2r i
-  if i.length == 3
-    o = (i.scan(/./).map {|n| (n * 2).to_i 16}).join ", "
+def h2r h
+  case h.length
+
+  when 3
+    (h.scan(/./).map {|n| (n * 2).to_i 16}).join ","
+  when 6
+    (h.scan(/../).map {|n| n.to_i 16}).join ","
   else
-    o = (i.scan(/../).map {|n| n.to_i 16}).join ", "
+    "error"
   end
-  "rgb(#{o})"
 end
 
 puts h2r ask "#"
