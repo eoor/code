@@ -1,17 +1,14 @@
-def ask q
-  print q; gets.chomp
+def ask question
+  print question; gets.chomp
 end
 
-def h2r h
-  case h.length
-
+def hex_to_rgb hex
+  case hex.length
   when 3
-    (h.scan(/./).map {|n| (n * 2).to_i 16}).join ","
+    (hex.scan(/./).map {|n| (n * 2).to_i 16}).join " "
   when 6
-    (h.scan(/../).map {|n| n.to_i 16}).join ","
-  else
-    "error"
+    (hex.scan(/../).map {|n| n.to_i 16}).join " "
   end
 end
 
-puts h2r ask "#"
+puts hex_to_rgb ask "#"
