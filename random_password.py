@@ -4,7 +4,7 @@ import string
 def password(length):
   characters = string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation
   while True:
-    output = "".join((secrets.choice(characters) for i in range(length)))
+    output = ''.join((secrets.choice(characters) for i in range(length)))
     for x in string.ascii_uppercase:
       if x in output:
         for x in string.ascii_lowercase:

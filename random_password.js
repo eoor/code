@@ -7,10 +7,10 @@ function HasAny(target, source) {
 }
 
 let abc = [
-  "abcdefghijklmnopqrstuvwxyz".split(""),
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
-  "0123456789".split(""),
-  "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~".split("")
+  'abcdefghijklmnopqrstuvwxyz'.split(''),
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''),
+  '0123456789'.split(''),
+  "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~".split('')
 ];
 
 function Password(length) {
@@ -28,7 +28,7 @@ function Password(length) {
     });
 
     if (test.every(Boolean)) {
-      return(output.join(""));
+      return(output.join(''));
     } else {
       continue
     }

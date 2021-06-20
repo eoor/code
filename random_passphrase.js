@@ -3,8 +3,8 @@ function RandInt(min, max) {
 }
 
 function Passphrase(length) {
-  var fs = require("fs");
-  var words = fs.readFileSync(__dirname + "/dictionary.txt", "utf-8").toString().split("\n");
+  var fs = require('fs');
+  var words = fs.readFileSync(__dirname + '/dictionary.txt', 'utf-8').toString().split('\n');
   var output = [];
   while (output.length < length) {
     var word = words[RandInt(0, words.length)];
@@ -12,7 +12,7 @@ function Passphrase(length) {
       output.push(word);
     }
   }
-  return output.join(" ");
+  return output.join(' ');
 }
 
 console.log(Passphrase(3));
