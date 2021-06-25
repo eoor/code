@@ -6,7 +6,12 @@ function HasAny(target, source) {
   return (source.some(ele => target.includes(ele)));
 }
 
-let abc = ['abcdefghijklmnopqrstuvwxyz'.split(''), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''), '0123456789'.split(''), "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~".split('')];
+let abc = [
+  'abcdefghijklmnopqrstuvwxyz'.split(''),
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''),
+  '0123456789'.split(''),
+  "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~".split('')
+];
 
 function Password(length) {
   let abc_ = abc.flat(1);
