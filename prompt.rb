@@ -1,6 +1,4 @@
-def ask(prompt)
-  print prompt + ': '
+def ask(q)
+  print q.to_s + ': '
   gets.chomp
 end
-
-puts ask('Enter something')
