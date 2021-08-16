@@ -1,6 +1,5 @@
 def ask(q)
-  print q.to_s + ': '
-  gets.chomp
+  print q; gets.chomp
 end
 
 def hex_to_rgb(hex)

@@ -17,16 +17,13 @@ function Password(length) {
   let abc_ = abc.flat(1);
   while (true) {
     var output = [];
-
     while (output.length < length) {
       output.push(abc_[RandInt(0, abc_.length)]);
     }
-
     let test = []
     abc.forEach(function (item, index) {
       test.push(HasAny(output, abc[index]));
     });
-
     if (test.every(Boolean)) {
       return(output.join(''));
     } else {
