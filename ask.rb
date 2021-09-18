@@ -1,4 +1,4 @@
 def ask(what)
-  print what.to_s + ': '
+  print "#{what}: "
   gets.chomp
 end
