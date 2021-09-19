@@ -1,6 +1,6 @@
 # Hardpass/Rephrase
 
-Strong random password and passphrase generators created with [Ruby](https://www.ruby-lang.org/en/).
+Strong random password and passphrase generators created with [Ruby](https://www.ruby-lang.org/en/). Generated keys are displayed with a visibility mask for added security.
 
 ## Hardpass
 
