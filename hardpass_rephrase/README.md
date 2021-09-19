@@ -13,7 +13,6 @@ Generates a password from a random selection of characters from the following gr
 
 At least 1 character from each group is selected.
 
-![](screenshots/hardpass.png)
 <img alt="" src="screenshots/hardpass.png" style="height: 319px !important; max-width: 682px !important;">
 
 #### Usage
