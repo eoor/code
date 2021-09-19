@@ -12,6 +12,7 @@ Generates a password from a random selection of characters from the following gr
 _At least_ 1 character from each group is selected.
 
 >`./hardpass` _Generates an 8-character long password._
+
 >`./hardpass 17` _Generates a 17-character long password. Accepts values between `4` and `64`._
 
 ## Rephrase
@@ -19,6 +20,7 @@ _At least_ 1 character from each group is selected.
 Generates a passphrase from a random selection of _7776_ English words from the [Diceware](https://theworld.com/~reinhold/diceware.html) wordlist.
 
 >`./rephrase` _Generates 3-word long passphrase._
+
 >`./rephrase 5` _Generates an 5-word long passphrase. Accepts values between `2` and `16`._
 
 ### Requirements
