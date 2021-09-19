@@ -16,6 +16,7 @@ At least 1 character from each group is selected.
 ### Screenshot
 
 
+
 ### Usage
 
 >`./hardpass` _Generates an 8-character long password._
