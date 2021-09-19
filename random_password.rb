@@ -1,10 +1,5 @@
 def password(length)
-  abc = [
-    'abcdefghijklmnopqrstuvwxyz'.chars,
-    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.chars,
-    '0123456789'.chars,
-    "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~".chars
-  ]
+  abc = [('a'..'z').to_a, ('A'..'Z').to_a, ('0'..'9').to_a, "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~".chars]
   abc_ = abc.join
   loop do
     input = ''
