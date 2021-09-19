@@ -22,11 +22,11 @@ end
 
 if ARGV.length != 0
   case ARGV[0].to_i
-  when 4...257
-    puts password(ARGV[0].to_i).style(101)
+  when 4...81
+    puts password(ARGV[0].to_i).style(47).style(37)
   else
     puts 'Error: Invalid argument.'.style(2)
   end
 else
-  puts password(16).style(101)
+  puts password(16).style(47).style(37)
 end
