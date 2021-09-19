@@ -17,7 +17,7 @@ At least 1 character from each group is used.
 
 >`hardpass` - Generates an 8-character password.
 
->`hardpass 16` - Generates a 17-character password. Accepts values between `4` and `64`.
+>`hardpass 16` - Generates a 16-character password. Accepts values between `4` and `64`.
 
 ![](screenshots/hardpass.png)
 
