@@ -13,7 +13,8 @@ Generates a password from a random selection of characters from the following gr
 
 At least 1 character from each group is selected.
 
-![](screenshots/hardpass.png){:width="684px"}
+![](screenshots/hardpass.png)
+<img alt="" src="screenshots/hardpass.png" style="max-width: 684px !important;">
 
 #### Usage
 
@@ -25,7 +26,8 @@ At least 1 character from each group is selected.
 
 Generates a passphrase from a random selection of _7776_ English words from the [Diceware](https://theworld.com/~reinhold/diceware.html) wordlist.
 
-![](screenshots/rephrase.png){:width="684px"}
+![](screenshots/rephrase.png)
+<img alt="" src="screenshots/rephrase.png" style="max-width: 684px !important;">
 
 #### Usage
 
