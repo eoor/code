@@ -1,9 +1,5 @@
 #!/usr/bin/env ruby
 
-class String
-  def style(code); "\033[#{code}m#{self}\033[0m" end
-end
-
 def password(length)
   abc = ['abcdefghijklmnopqrstuvwxyz'.chars, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.chars, '0123456789'.chars, "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~".chars]
   abc_ = abc.join
@@ -20,13 +16,18 @@ def password(length)
   end
 end
 
+class String
+  def style_success; "\033[90m\033[100m#{self}\033[0m" end
+  def style_error; "\033[2m#{self}\033[0m" end
+end
+
 if ARGV.length != 0
   case ARGV[0].to_i
-  when 4...81
-    puts password(ARGV[0].to_i).style(47).style(37)
+  when 4...65
+    puts password(ARGV[0].to_i).style_success
   else
-    puts 'Error: Invalid argument.'.style(2)
+    puts 'Invalid argument. Enter a value between 4 and 64.'.style_error
   end
 else
-  puts password(16).style(47).style(37)
+  puts password(8).style_success
 end
