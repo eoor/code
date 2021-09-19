@@ -13,11 +13,11 @@ Generates a password from a random selection of characters from the following gr
 
 At least 1 character from each group is selected.
 
-### Screenshot
+#### Screenshot
 
 
 
-### Usage
+#### Usage
 
 >`./hardpass` _Generates an 8-character long password._
 
@@ -27,11 +27,11 @@ At least 1 character from each group is selected.
 
 Generates a passphrase from a random selection of _7776_ English words from the [Diceware](https://theworld.com/~reinhold/diceware.html) wordlist.
 
-### Screenshot
+#### Screenshot
 
 
 
-### Usage
+#### Usage
 
 >`./rephrase` _Generates 3-word long passphrase._
 
