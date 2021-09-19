@@ -15,9 +15,9 @@ At least 1 character from each group is used.
 
 ### Usage
 
->`hardpass` - Generates an 8-character long password.
+>`hardpass` - Generates an 8-character password.
 
->`hardpass 17` - Generates a 17-character long password. Accepts values between `4` and `64`.
+>`hardpass 16` - Generates a 17-character password. Accepts values between `4` and `64`.
 
 ![](screenshots/hardpass.png)
 
@@ -27,8 +27,8 @@ Generates a passphrase from a random selection of _7776_ English words from the 
 
 ### Usage
 
->`rephrase` - Generates 3-word long passphrase.
+>`rephrase` - Generates a 3-word passphrase.
 
->`rephrase 5` - Generates an 5-word long passphrase. Accepts values between `2` and `16`.
+>`rephrase 5` - Generates an 5-word passphrase. Accepts values between `2` and `16`.
 
 ![](screenshots/rephrase.png)
