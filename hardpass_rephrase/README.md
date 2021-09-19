@@ -10,9 +10,9 @@ Generates a password from a random selection of `A`&ndash;`Z`, `a`&ndash;`z`, `0
 
 Generates a passphrase from a random selection of _7776_ English words from the [Diceware](https://theworld.com/~reinhold/diceware.html) wordlist.
 
->`/path/to/`**`rephrase`** _Generates 3-word long passphrase._
+><code>/path/to/**rephrase**</code> _Generates 3-word long passphrase._
 >
->`/path/to/`**`rephrase 5`** _Generates an 5-word long passphrase. Accepts values between `2` and `16`._
+><code>/path/to/**rephrase 5**</code> _Generates an 5-word long passphrase. Accepts values between `2` and `16`._
 
 ### Requirements:
 
