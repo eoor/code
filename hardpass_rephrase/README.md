@@ -1,6 +1,6 @@
 ## Hardpass
 
-Generates a password from a random selection of `A`-`Z`, `a`-`z`, `0`-`9` and `!"#$%&'()*+,-./:;<=>?@_[\\]^_`{|}~` characters, using _at least_ 1 character from each group.
+Generates a password from a random selection of `A`&ndash;`Z`, `a`&ndash;`z`, `0`&ndash;`9` and `!"#$%&'()*+,-./:;<=>?@_[\]^_&grave; {|}~` characters, using _at least_ 1 character from each group.
 
 > `/path/to/hardpass` _Generates an 8-character long password._
 >
