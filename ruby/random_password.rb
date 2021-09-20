@@ -14,4 +14,4 @@ def password(length)
   end
 end
 
-puts password(16)
+puts password(8)
