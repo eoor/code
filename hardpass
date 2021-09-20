@@ -17,7 +17,7 @@ def password(length)
 end
 
 class String
-  def style_success; "\033[90m\033[100m#{self}\033[0m" end
+  def style_success; "\033[2m\033[100m#{self}\033[0m" end
   def style_error; "\033[2m#{self}\033[0m" end
 end
 
