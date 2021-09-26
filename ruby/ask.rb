@@ -1,4 +1,3 @@
 def ask(what)
-  print "#{what}: "
-  gets.chomp
+  print "#{what}: "; gets.chomp
 end
