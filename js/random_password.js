@@ -32,4 +32,4 @@ function Password(length) {
   }
 }
 
-console.log(Password(16));
+console.log(Password(8));
