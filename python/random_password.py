@@ -23,4 +23,4 @@ def password(length):
       else:
         continue
 
-print(password(16))
+print(password(8))
