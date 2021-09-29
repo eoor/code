@@ -10,7 +10,7 @@ def passphrase(length)
   output.join(' ')
 end
 
-if (1..8).include? ARGV[0].to_i
+if (1..16).include? ARGV[0].to_i
   puts passphrase(ARGV[0].to_i)
 else
   puts passphrase(2)
