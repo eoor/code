@@ -10,18 +10,8 @@ def passphrase(length)
   output.join(' ')
 end
 
-class String
-  def style_success; "\033[2m\033[100m#{self}\033[0m" end
-  def style_error; "\033[2m#{self}\033[0m" end
-end
-
-if ARGV.length != 0
-  case ARGV[0].to_i
-  when 2..16
-    puts passphrase(ARGV[0].to_i).style_success
-  else
-    puts 'Invalid argument. Enter a value between 2 and 16.'.style_error
-  end
+if (1..8).include? ARGV[0].to_i
+  puts passphrase(ARGV[0].to_i)
 else
-  puts passphrase(3).style_success
+  puts passphrase(2)
 end
