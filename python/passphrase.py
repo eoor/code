@@ -9,4 +9,4 @@ def passphrase(length):
     if word not in output: output.append(word)
   return ' '.join(output)
 
-print(passphrase(3))
+print(passphrase(2))

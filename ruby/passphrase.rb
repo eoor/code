@@ -7,3 +7,5 @@ def passphrase(length)
   end
   output.join(' ')
 end
+
+puts passphrase(2)

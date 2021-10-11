@@ -15,4 +15,4 @@ function Passphrase(length) {
   return output.join(' ');
 }
 
-console.log(Passphrase(3));
+console.log(Passphrase(2));
