@@ -13,3 +13,4 @@ def strength(entropy)
 end
 
 puts entropy(94, 8)
+puts strength(entropy(94, 8))
