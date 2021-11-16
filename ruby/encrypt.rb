@@ -1,4 +1,4 @@
-require 'openssl'
+require "openssl"
 
 class String
   def encrypt(key)
@@ -14,8 +14,8 @@ class String
   end
 end
 
-password = 'password'
-message = 'String'
+password = "password"
+message = "String"
 
 key = Digest::SHA256.digest(password)
 
